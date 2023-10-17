@@ -56,18 +56,13 @@ public class ProjectOrsApplication extends SpringBootServletInitializer {
 			 * Add Interceptors
 			 */
 
-			/*
-			 * @Override public void addInterceptors(InterceptorRegistry registry) {
-			 * registry.addInterceptor(frontCtl).addPathPatterns("/**").excludePathPatterns(
-			 * "/Auth/**"); }
-			 */
+			
+			 @Override public void addInterceptors(InterceptorRegistry registry) {
+				 
+			  registry.addInterceptor(frontCtl).addPathPatterns("/**").excludePathPatterns(
+			  "/Auth/**"); 
+			 }
 
-			/*
-			 * @Override public void addResourceHandlers(ResourceHandlerRegistry registry) {
-			 * registry.addResourceHandler("/**").addResourceLocations("classpath:/public/")
-			 * ; }
-			 * 
-			 */
 
 		};
 
