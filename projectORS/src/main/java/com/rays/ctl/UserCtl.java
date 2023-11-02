@@ -233,9 +233,9 @@ public class UserCtl extends BaseCtl<UserForm, UserDTO, UserServiceInt> {
 		System.out.println(doc.getDescription() + "description");
 
 		doc.setPath(req.getServletPath());
-		System.out.println(doc.getPath() + "path-----vipin");
+		System.out.println(doc.getPath() + "path-----rachi");
 		doc.setUserId(userId);
-		System.out.println(doc.getUserId() + "id-----vipin");
+		System.out.println(doc.getUserId() + "id-----rachi");
 
 		if (userDTO.getImageId() != null && userDTO.getImageId() > 0) {
 			doc.setId(userDTO.getImageId());
